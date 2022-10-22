@@ -5,37 +5,30 @@ from linebot.models import *
 
 def test():
     message = TemplateSendMessage(
-        alt_text='圖片旋轉木馬',
+        alt_text='解題小幫手',
         template=ImageCarouselTemplate(
             columns=[
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/uKYgfVs.jpg",
+                    image_url="https://i.imgur.com/5rnnEKZ.jpg",
                     action=URITemplateAction(
-                        label="新鮮水果",
-                        uri="http://img.juimg.com/tuku/yulantu/110709/222-110F91G31375.jpg"
+                        label="進位紀錄",
+                        uri="https://i.imgur.com/5rnnEKZ.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QOcAvjt.jpg",
+                    image_url="https://i.imgur.com/9JTIUbi.jpg",
                     action=URITemplateAction(
-                        label="新鮮蔬菜",
-                        uri="https://cdn.101mediaimage.com/img/file/1410464751urhp5.jpg"
+                        label="進位加法",
+                        uri="https://i.imgur.com/9JTIUbi.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/Np7eFyj.jpg",
+                    image_url="https://i.imgur.com/qlGNUB4.jpg",
                     action=URITemplateAction(
-                        label="可愛狗狗",
-                        uri="http://imgm.cnmo-img.com.cn/appimg/screenpic/big/674/673928.JPG"
+                        label="整數倍規律",
+                        uri="https://i.imgur.com/qlGNUB4.jpg"
                     )
                 ),
-                ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QRIa5Dz.jpg",
-                    action=URITemplateAction(
-                        label="可愛貓咪",
-                        uri="https://m-miya.net/wp-content/uploads/2014/07/0-065-1.min_.jpg"
-                    )
-                )
             ]
         )
     )
