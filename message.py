@@ -6,7 +6,7 @@ from linebot.models import *
 #ImagemapSendMessage(組圖訊息)
 def imagemap_message():
     message = ImagemapSendMessage(
-        base_url="https://i.imgur.com/BfTFVDN.jpg",
+        base_url="https://i.imgur.com/qSCz88e.jpg",
         alt_text='補充資源',
 	 base_size=BaseSize(height=2000, width=2000),
         actions=[
@@ -83,7 +83,7 @@ def Confirm_Template():
             actions=[
                 PostbackTemplateAction(
                     label="影片教學",
-                    text="現在、立刻、馬上",
+                    text="https://www.junyiacademy.org/",
                     data="影片"
                 ),
                 MessageTemplateAction(
