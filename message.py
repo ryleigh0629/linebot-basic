@@ -6,36 +6,36 @@ from linebot.models import *
 #ImagemapSendMessage(組圖訊息)
 def imagemap_message():
     message = ImagemapSendMessage(
-        base_url="https://i.imgur.com/qSCz88e.jpg",
+        base_url="https://i.imgur.com/DC6LGjF.jpg",
         alt_text='補充資源',
-	 base_size=BaseSize(height=2000, width=2000),
+	 base_size=BaseSize(height=1500, width=1500),
         actions=[
             URIImagemapAction(
                 #均一國語文
                 link_uri="https://www.junyiacademy.org/junyi-chinese/ele-c",
                 area=ImagemapArea(
-                    x=0, y=0, width=1000, height=1000
+                    x=0, y=0, width=750, height=750
                 )
             ),
             URIImagemapAction(
                 #均一數學四年級
                 link_uri="https://www.junyiacademy.org/course-compare/math-elem/math-4",
                 area=ImagemapArea(
-                    x=1000, y=0, width=1000, height=1000
+                    x=750, y=0, width=750, height=750
                 )
             ),
             URIImagemapAction(
                 #學習吧
                 link_uri="https://www.learnmode.net/search?q=",
                 area=ImagemapArea(
-                    x=0, y=1000, width=1000, height=1000
+                    x=0, y=750, width=750, height=750
                 )
             ),
             URIImagemapAction(
                 #老師的小天地
                 link_uri="https://www.canva.com/design/DAFLVsU6-x0/vpHgptJink4nvSz8lro1ag/view?website#2",
                 area=ImagemapArea(
-                    x=1000, y=1000, width=1000, height=1000
+                    x=750, y=750, width=750, height=750
                 )
             ),
 
@@ -103,7 +103,7 @@ def Carousel_Template():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://i.imgur.com/leN9M2e.jpg',
+                    thumbnail_image_url='https://i.imgur.com/XoQIuP6.jpg',
                     title='單元2:乘法',
                     text='請選擇較進行的活動',
                     actions=[
@@ -122,7 +122,7 @@ def Carousel_Template():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://i.imgur.com/jFNsxBY.jpg',
+                    thumbnail_image_url='https://i.imgur.com/V8HEsGz.jpg',
                     title='任務清單',
                     text='選擇目標任務',
                     actions=[
@@ -153,24 +153,24 @@ def image_carousel_message1():
         template=ImageCarouselTemplate(
             columns=[
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/5rnnEKZ.jpg",
+                    image_url="https://i.imgur.com/EsxgIX9.jpg",
                     action=URITemplateAction(
                         label="進位紀錄",
-                        uri="https://i.imgur.com/5rnnEKZ.jpg"
+                        uri="https://i.imgur.com/EsxgIX9.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/9JTIUbi.jpg",
+                    image_url="https://i.imgur.com/6Ym5vH1.jpg",
                     action=URITemplateAction(
                         label="進位加法",
-                        uri="https://i.imgur.com/9JTIUbi.jpg"
+                        uri="https://i.imgur.com/6Ym5vH1.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/qlGNUB4.jpg",
+                    image_url="https://i.imgur.com/6vtQhIT.jpg",
                     action=URITemplateAction(
                         label="整數倍規律",
-                        uri="https://i.imgur.com/qlGNUB4.jpg"
+                        uri="https://i.imgur.com/6vtQhIT.jpg"
                     )
                 ),
             ]
