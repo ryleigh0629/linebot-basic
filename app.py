@@ -61,15 +61,19 @@ def handle_message(event):
     elif '任務清單' in msg:
         message = Carousel_Template()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '圖片畫廊' in msg:
+    elif '解題小幫手' in msg:
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
     elif '功能列表' in msg:
         message = function_list()
         line_bot_api.reply_message(event.reply_token, message)
+    elif '解題小幫手' in msg:
+        message = image_carousel_message1()
+        line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
         line_bot_api.reply_message(event.reply_token, message)
+
 
 @handler.add(PostbackEvent)
 def handle_message(event):
